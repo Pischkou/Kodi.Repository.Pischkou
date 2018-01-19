@@ -2,7 +2,7 @@
 <addon id="plugin.video.covenant" version="1.1.30" name="Covenant" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-        <import addon="repository.pischkou" version="0.1"/>
+        <import addon="repository.pischkou" version="0.0.1"/>
 		<!--    <import addon="repository.colossus" optional="true"/>   !!stopped!! -->
 		<import addon="script.module.covenant" />
 		<import addon="script.covenant.artwork" version="1.0.0" />

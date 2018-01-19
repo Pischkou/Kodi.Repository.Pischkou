@@ -3,12 +3,12 @@
 <addon id="plugin.video.covenant" version="1.1.30" name="Covenant" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-        <import addon="repository.pischkou" version="0.1"/>
+        <import addon="repository.pischkou" version="0.0.1"/>
 		<!--    <import addon="repository.colossus" optional="true"/>   !!stopped!! -->
 		<import addon="script.module.covenant" />
 		<import addon="script.covenant.artwork" version="1.0.0" />
 		<import addon="script.covenant.metadata" version="1.0.0" />
-		<import addon="script.module.urlresolver" version="3.0.0" />
+		<import addon="script.module.urlresolver" version="4.0.17" />
 		<import addon="script.module.requests" />
 		<import addon="script.module.metahandler" version="1.0.0" />
 	</requires>
@@ -43,9 +43,9 @@
 <addon id="repository.pischkou" name="Pischkou Repository" version="0.0.1" provider-name="Pischkou">
 	<extension point="xbmc.addon.repository" name="Pischkou">
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/Pischkou/repository.pischkou/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/Pischkou/repository.pischkou/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/Pischkou/repository.pischkou/master/zips/</datadir>
+			<info compressed="false">https://raw.githubusercontent.com/Pischkou/Kodi.Repository.Pischkou/master/pischkou-addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Pischkou/Kodi.Repository.Pischkou/master/pischkou-addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Pischkou/Kodi.Repository.Pischkou/master/zips/</datadir>
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
