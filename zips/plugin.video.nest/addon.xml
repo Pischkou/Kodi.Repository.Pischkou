@@ -2,13 +2,13 @@
 <addon id="plugin.video.nest" version="1.0.0" name="Nest" provider-name="Pischkou">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-        <import addon="repository.pischkou" version="0.0.1"/>
+        <import addon="repository.pischkou" version="1.0.0"/>
 		<import addon="script.module.nest" />
 		<import addon="script.nest.artwork" version="1.0.0" />
 		<import addon="script.nest.metadata" version="1.0.0" />
-		<import addon="script.module.urlresolver" version="4.0.17" />
 		<import addon="script.module.requests" />
-		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.module.metahandler" version="3.0.2" />
+		<import addon="script.module.urlresolver" version="4.0.17" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="nest.py">
 		<provides>video</provides>
@@ -16,7 +16,14 @@
 	<extension point="xbmc.service" library="service.py" start="startup" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Nest</summary>
-		<description lang="en">[I]A New Generation[/I][CR][CR][B]Nest Movies and TV[/B][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<description lang="en">
+			The [B]Nest Movies and TV Shows[/B] addon allows users to watch content extracted from web sources. The author does not host any of the content in this addon and takes no responsibility for content found. This addon is oriented for simple use, so debrid support have been removed, only fonts avaiable for any user are provided.
+			ATTENTION: It is advice the users to use the GoogleDNS or OpenDNS when using this addon, the use of a VPN is also adviced.
+		</description>
+		<description lang="pt">
+			O [B]Nest Filmes e Séries[/B] addon permite aos utilizadores ver conteudo extraido de páginas web. O autor não hospeda nenhum do conteúdo apresentado neste addon e não assume qualquer responsabilidade por isso. Este addon é orientado para um uso simples, por isso o suporte a fontes debrid foi removido, apena fontes disponíveis para qualquer utilizador são fornecidas.
+			ATENÇÃO: Os utilizadores são aconselhados a utilizar o GoogleDNS ou OpenDNS quando estiverem a utilizar o addon, o uso de uma VPN também é aconselhado.
+		</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<forum></forum>
