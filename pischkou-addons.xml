@@ -10,7 +10,6 @@
 		<import addon="script.module.urlresolver" version="4.0.17" />
 		<import addon="script.module.requests" />
 		<import addon="script.module.metahandler" />
-		<import addon="script.module.beautifulsoup"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="covenant.py">
 		<provides>video</provides>
@@ -29,6 +28,41 @@
 		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
 		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje bilo kakav sadržaj koji je pronađen i nije povezan sa bilo kojim izvorom sadržaja. Ovaj dodatak samo pretražuje sadržaj na web stranicama. Koristite ga na vlastitu odgovornost!</disclaimer>
 		<disclaimer lang="he">מחבר ההרחבה זה אינו מארח את התוכן שיתכן ויימצא ואין לו זיקה לאף אחד מספקי התוכן. הרחבה רק מחפשת תוכן שקיים באתרי אינטרנט. השימוש בהרחבה הוא על אחריותך בלבד!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+    			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+
+<addon id="plugin.video.nest" version="1.0.0" name="Nest" provider-name="Pischkou">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+        <import addon="repository.pischkou" version="0.0.1"/>
+		<import addon="script.module.nest" />
+		<import addon="script.nest.artwork" version="1.0.0" />
+		<import addon="script.nest.metadata" version="1.0.0" />
+		<import addon="script.module.urlresolver" version="4.0.17" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="nest.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Nest</summary>
+		<description lang="en">[I]A New Generation[/I][CR][CR][B]Nest Movies and TV[/B][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -90,6 +124,17 @@
 	</extension>
 </addon>
 
+<addon id="script.module.nest" name="Nest Module" version="1.0.0" provider-name="Pischkou">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Nest</summary>
+	</extension>
+</addon>
+
 <addon id="script.module.urlresolver" name="URLResolver" version="4.0.17" provider-name="Eldorado, tknorris, tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
@@ -107,6 +152,30 @@
 		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
+	</extension>
+</addon>
+
+<addon id="script.nest.artwork" version="1.0.0" name="Nest Artwork" provider-name="Pischkou">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Nest Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.nest.metadata" version="1.0.0" name="Nest Metadata" provider-name="Pischkou">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Nest Addon</summary>
+		<description>Metadata for Nest are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
 	</extension>
 </addon>
 

@@ -9,7 +9,6 @@
 		<import addon="script.module.urlresolver" version="4.0.17" />
 		<import addon="script.module.requests" />
 		<import addon="script.module.metahandler" />
-		<import addon="script.module.beautifulsoup"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="covenant.py">
 		<provides>video</provides>
