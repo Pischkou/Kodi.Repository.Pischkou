@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.nest" version="1.0.0" name="Nest" provider-name="Pischkou">
+<addon id="plugin.video.nest" version="1.0.1" name="Nest" provider-name="Pischkou">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-        <import addon="repository.pischkou" version="1.0.0"/>
+        <import addon="repository.pischkou" version="1.0.1"/>
 		<import addon="script.module.nest" />
 		<import addon="script.nest.artwork" version="1.0.0" />
 		<import addon="script.nest.metadata" version="1.0.0" />
 		<import addon="script.module.requests" />
 		<import addon="script.module.metahandler" version="3.0.2" />
-		<import addon="script.module.urlresolver" version="4.0.17" />
+		<import addon="script.module.urlresolver" />
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="script.module.resolveurl" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="nest.py">
 		<provides>video</provides>

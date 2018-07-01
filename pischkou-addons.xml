@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.nest" version="1.0.0" name="Nest" provider-name="Pischkou">
+<addon id="plugin.video.nest" version="1.0.1" name="Nest" provider-name="Pischkou">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-        <import addon="repository.pischkou" version="1.0.0"/>
+        <import addon="repository.pischkou" version="1.0.1"/>
 		<import addon="script.module.nest" />
 		<import addon="script.nest.artwork" version="1.0.0" />
 		<import addon="script.nest.metadata" version="1.0.0" />
 		<import addon="script.module.requests" />
 		<import addon="script.module.metahandler" version="3.0.2" />
-		<import addon="script.module.urlresolver" version="4.0.17" />
+		<import addon="script.module.urlresolver" />
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="script.module.resolveurl" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="nest.py">
 		<provides>video</provides>
@@ -42,12 +44,32 @@
 	</extension>
 </addon>
 
-<addon id="repository.pischkou" name="Pischkou Repository" version="1.0.0" provider-name="Pischkou">
+<addon id="repository.pischkou" name="Pischkou Repository" version="1.0.1" provider-name="Pischkou">
 	<extension point="xbmc.addon.repository" name="Pischkou">
+		<!-- MAIN REPOSITORY -->
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/Pischkou/Kodi.Repository.Pischkou/master/pischkou-addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/Pischkou/Kodi.Repository.Pischkou/master/pischkou-addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/Pischkou/Kodi.Repository.Pischkou/master/zips/</datadir>
+		</dir>
+		<!-- TO GET RESOLVERURL -->
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+		</dir>
+		<!-- TO GET METAHANDLER -->
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/MrBlamo420/Project/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/MrBlamo420/Project/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/MrBlamo420/Project/master/zips/</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<!-- TO GET URLRESOLVER -->
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -58,32 +80,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.metahandler"
-     name="metahandler"
-     version="3.0.2"
-     provider-name="Eldorado, jsergio">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.simplejson" version="3.3.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="script.module.myconnpy" version="1.1.6"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
-    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
-    <disclaimer lang="en"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="script.module.nest" name="Nest Module" version="1.0.0" provider-name="Pischkou">
+<addon id="script.module.nest" name="Nest Module" version="1.0.1" provider-name="Pischkou">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
@@ -91,26 +88,6 @@
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="en">Nest</summary>
-	</extension>
-</addon>
-
-<addon id="script.module.urlresolver" name="URLResolver" version="4.0.17" provider-name="Eldorado, tknorris, tvaddons">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="plugin.video.youtube" optional="true" />
-		<import addon="script.module.python.twitch" optional="true" />
-		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
-		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-        <forum>https://www.tvaddons.co/forums</forum>
-        <website>https://www.tvaddons.co</website>
 	</extension>
 </addon>
 
