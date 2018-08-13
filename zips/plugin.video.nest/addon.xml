@@ -2,7 +2,7 @@
 <addon id="plugin.video.nest" version="1.0.1" name="Nest" provider-name="Pischkou">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-        <import addon="repository.pischkou" version="1.0.1"/>
+        <import addon="repository.pischkou" />
 		<import addon="script.module.nest" />
 		<import addon="script.nest.artwork" version="1.0.0" />
 		<import addon="script.nest.metadata" version="1.0.0" />

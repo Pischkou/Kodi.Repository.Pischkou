@@ -3,7 +3,7 @@
 <addon id="plugin.video.nest" version="1.0.1" name="Nest" provider-name="Pischkou">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-        <import addon="repository.pischkou" version="1.0.1"/>
+        <import addon="repository.pischkou" />
 		<import addon="script.module.nest" />
 		<import addon="script.nest.artwork" version="1.0.0" />
 		<import addon="script.nest.metadata" version="1.0.0" />
@@ -44,7 +44,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.pischkou" name="Pischkou Repository" version="1.0.1" provider-name="Pischkou">
+<addon id="repository.pischkou" name="Pischkou Repository" version="1.0.2" provider-name="Pischkou">
 	<extension point="xbmc.addon.repository" name="Pischkou">
 		<!-- MAIN REPOSITORY -->
 		<dir>
@@ -70,6 +70,12 @@
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+		</dir>
+		<!-- MR PIRACY REPOSITORY -->
+		<dir>
+			<info compressed="false">http://raw.github.com/mrpiracyPT/repository.mrpiracy/master/addons.xml</info>
+			<checksum>http://raw.github.com/mrpiracyPT/repository.mrpiracy/master/addons.xml.md5</checksum>
+			<datadir zip="true">http://raw.github.com/mrpiracyPT/repository.mrpiracy/master/repo/</datadir>
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
