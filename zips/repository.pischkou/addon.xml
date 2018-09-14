@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.pischkou" name="Pischkou Repository" version="1.0.2" provider-name="Pischkou">
+<addon id="repository.pischkou" name="Pischkou Repository" version="1.0.3" provider-name="Pischkou">
 	<extension point="xbmc.addon.repository" name="Pischkou">
 		<!-- MAIN REPOSITORY -->
 		<dir>
@@ -12,13 +12,6 @@
 			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-		</dir>
-		<!-- TO GET METAHANDLER -->
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/MrBlamo420/Project/master/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/MrBlamo420/Project/master/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/MrBlamo420/Project/master/zips/</datadir>
-			<hashes>false</hashes>
 		</dir>
 		<!-- TO GET URLRESOLVER -->
 		<dir>
