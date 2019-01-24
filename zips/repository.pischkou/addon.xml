@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.pischkou" name="Pischkou Repository" version="1.0.3" provider-name="Pischkou">
+<addon id="repository.pischkou" name="Pischkou Repository" version="1.0.4" provider-name="Pischkou">
 	<extension point="xbmc.addon.repository" name="Pischkou">
 		<!-- MAIN REPOSITORY -->
 		<dir>
@@ -7,17 +7,11 @@
 			<checksum>https://raw.githubusercontent.com/Pischkou/Kodi.Repository.Pischkou/master/pischkou-addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/Pischkou/Kodi.Repository.Pischkou/master/zips/</datadir>		
 		</dir>
-		<!-- TO GET RESOLVERURL -->
+		<!-- EXODUS REPOSITORY -->
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-		</dir>
-		<!-- TO GET URLRESOLVER -->
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+			<info compressed="false">https://raw.githubusercontent.com/kodibae/repository.kodibae/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/kodibae/repository.kodibae/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/kodibae/repository.kodibae/master/</datadir>
 		</dir>
 		<!-- MR PIRACY REPOSITORY -->
 		<dir>
