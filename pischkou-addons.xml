@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.pischkou" name="Pischkou Repository" version="1.0.5" provider-name="Pischkou">
+<addon id="repository.pischkou" name="Pischkou Repository" version="1.0.6" provider-name="Pischkou">
 	<extension point="xbmc.addon.repository" name="Pischkou">
 		<!-- MAIN REPOSITORY -->
 		<dir>
@@ -8,11 +8,11 @@
 			<checksum>https://raw.githubusercontent.com/Pischkou/Kodi.Repository.Pischkou/master/pischkou-addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/Pischkou/Kodi.Repository.Pischkou/master/zips/</datadir>
 		</dir>
-		<!-- EXODUS REDUX REPOSITORY -->
+		<!-- PLEX KODI CONNECT REPOSITORY -->
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/I-A-C/zips/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/I-A-C/zips/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/I-A-C/zips/master/</datadir>
+			<info compressed="false">https://raw.githubusercontent.com/croneter/binary_repo/master/stable/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/croneter/binary_repo/master/stable/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/croneter/binary_repo/master/stable/</datadir>
 		</dir>
 		<!-- MR PIRACY REPOSITORY -->
 		<dir>
